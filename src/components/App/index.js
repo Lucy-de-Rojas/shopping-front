@@ -33,7 +33,7 @@ function App() {
       setList(data.payload);
     }
     getShoppingList();
-  }, [list]);
+  }, []);
 
 
 
