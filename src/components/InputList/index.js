@@ -25,7 +25,7 @@ function InputList({ addToList, buttonText }) {
   function handleInput(event) {
     // This function tracks the string information typed into the input field.
     const value = event.target.value;
-    console.log(value);
+  
     setInput(value);
   }
 
@@ -38,6 +38,7 @@ function InputList({ addToList, buttonText }) {
 
 
   function handleClick() {
+    console.log(input);
     addToList(input);
     setInput("");
   }
