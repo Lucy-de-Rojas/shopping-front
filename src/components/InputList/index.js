@@ -39,7 +39,7 @@ function InputList({ addToList, buttonText }) {
 
   function handleClick() {
     console.log(input);
-    console.log(process.env);
+    console.log('env vars: >>>>',process.env);
 
 
     addToList(input);
