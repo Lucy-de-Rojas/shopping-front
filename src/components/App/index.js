@@ -26,7 +26,7 @@ function App() {
   // Fetching shopping list data from shopping list API.
   useEffect(() => {
     async function getShoppingList() {
-      const response = await fetch(`https://lucyderojas2.herokuapp.com/items`);
+      const response = await fetch(url);
       // const response = await fetch(`${url}/items`);
       const data = await response.json(response);
       console.log(data);
