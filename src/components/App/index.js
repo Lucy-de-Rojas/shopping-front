@@ -53,7 +53,7 @@ function App() {
       completed: false,
     };
 
-    const response = await fetch(`${url}/items`, {
+    const response = await fetch(`${url}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ listItem: listItemWithoutId }),
