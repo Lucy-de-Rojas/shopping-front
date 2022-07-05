@@ -39,6 +39,9 @@ function InputList({ addToList, buttonText }) {
 
   function handleClick() {
     console.log(input);
+    console.log(process.env);
+
+
     addToList(input);
     setInput("");
   }
