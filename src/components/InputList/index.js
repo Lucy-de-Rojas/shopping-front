@@ -39,6 +39,7 @@ function InputList({ addToList, buttonText }) {
 
   function handleClick() {
     console.log(input);
+    console.log('next step');
     console.log('env vars: >>>>',process.env);
 
 
