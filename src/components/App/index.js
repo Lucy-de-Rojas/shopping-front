@@ -111,6 +111,9 @@ function App() {
       body: JSON.stringify({ completed: IDBCursorWithValue-1 }),
     });
 
+    let data = response.json();
+    console.log('data from update: >>>>>',data);
+// end of update
     
 
 
@@ -124,6 +127,14 @@ function App() {
       });
     });
   }
+
+
+
+
+
+
+
+
 
 
 
