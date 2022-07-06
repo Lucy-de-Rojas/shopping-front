@@ -119,7 +119,7 @@ function App() {
     // sending update to the back end:
 
    const response = await fetch(`${url}`, {
-      method: "UPDATE",
+      method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ completed:idOfTickedItem }),
     });
