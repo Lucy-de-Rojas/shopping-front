@@ -105,14 +105,14 @@ function App() {
 
 
     // sending update to the back end:
-    let response = await fetch(url, {
-      method: "UPDATE",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ completed: IDBCursorWithValue-1 }),
-    });
+    // let response = await fetch(url, {
+    //   method: "UPDATE",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify({ completed: IDBCursorWithValue-1 }),
+    // });
 
-    let data = response.json();
-    console.log('data from update: >>>>>',data);
+    // let data = response.json();
+    // console.log('data from update: >>>>>',data);
 // end of update
     
 
