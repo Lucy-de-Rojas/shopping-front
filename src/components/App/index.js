@@ -120,11 +120,11 @@ function App() {
     let response = await fetch(url, {
       method: "UPDATE",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ completed: IDBCursorWithValue-1 }),
+      body: JSON.stringify({ completed: IDBCursorWithValue }),
     });
 
     let data = response.json();
-    console.log('data from update: >>>>>',data);
+    console.log('data from update: >>>>>', data);
 // end of update
     
 
@@ -135,8 +135,7 @@ function App() {
 
 
 
-  }
-
+  }    // end of tickItem
 
 
 
