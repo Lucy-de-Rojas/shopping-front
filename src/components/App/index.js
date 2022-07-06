@@ -98,7 +98,7 @@ function App() {
 
 
   function tickItem(idOfTickedItem) {
-    alert(`clicked ${idOfTickedItem}}`)
+    alert(`clicked ${idOfTickedItem}`)
     setList((previous) => {
       return previous.map((item) => {
         return item.id !== idOfTickedItem
