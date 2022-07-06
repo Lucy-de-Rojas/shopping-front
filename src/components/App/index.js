@@ -119,7 +119,7 @@ function App() {
     // sending update to the back end:
     let response = await fetch(url, {
       method: "UPDATE",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", Referer: "https://lucyderojas2.herokuapp.com/items" },
       body: JSON.stringify({ completed: idOfTickedItem }),
     });
 
