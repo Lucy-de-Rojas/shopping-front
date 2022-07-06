@@ -61,7 +61,9 @@ function App() {
 
     if (!response.ok) {
       // Shouldn't really use alert, as it blocks, but will do for now.
-      return alert("Failed to add item, please try again later.");
+      // return alert("Failed to add item, please try again later.");
+      console.log("Failed to add item, please try again later.");
+      return;
     }
 
     const data = await response.json();
@@ -97,8 +99,23 @@ function App() {
 
 
 
-  function tickItem(idOfTickedItem) {
-    alert(`clicked ${idOfTickedItem}`)
+  async function tickItem(idOfTickedItem) {
+    console.log(`clicked ${idOfTickedItem}`);
+
+
+
+    // sending update to the back end:
+    let response = await fetch(url, {
+      method: "UPDATE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ completed: IDBCursorWithValue-1 }),
+    });
+
+    
+
+
+
+
     setList((previous) => {
       return previous.map((item) => {
         return item.id !== idOfTickedItem
