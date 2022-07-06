@@ -120,7 +120,7 @@ function App() {
     let response = await fetch(url, {
       method: "UPDATE",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ completed: IDBCursorWithValue }),
+      body: JSON.stringify({ completed: true }),
     });
 
     let data = response.json();
